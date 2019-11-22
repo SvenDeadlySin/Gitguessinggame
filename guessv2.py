@@ -31,5 +31,19 @@ elif guess == the_number:
     time.sleep(2)
     print("And it only took you", tries, "tries!\n")
 
-input("\n\nPress the enter key to exit.")
+while True:
+    # main program
+    while True:
+         answer = input("Run again? (y/n): ")
+         if answer in ("y", "n"):
+             break
+         print ("Invalid input...")
+    if answer == "y":
+         continue
+    else:
+         print ("Goodbye!")
+         break
+        
+
+
         
